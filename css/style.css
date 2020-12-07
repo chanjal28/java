@@ -1,0 +1,15 @@
+.background{
+    background: url("../images/Math-Doodle.jpg");
+}
+.text{
+    font-size: 40px;
+    font-weight: bold;
+    font-style:italic;
+   
+}
+
+.ptext{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
