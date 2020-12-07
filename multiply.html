@@ -12,22 +12,23 @@
     <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="index.php">Add</a>
+            <a class="nav-link" href="index.html">Add</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="substract.php">Substract</a>
+            <a class="nav-link" href="substract.html">Substract</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="multiply.php">Multiply</a>
+            <a class="nav-link" href="multiply.html">Multiply</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="div.php">Division</a>
+            <a class="nav-link" href="div.html">Division</a>
           </li>
         </ul>
       </nav>
       <center><p class="text">Calculator</p></center>
-                
-    <table class="table">
+    
+               
+                <table class="table">
                     <tr>
                         <td><p class="ptext">Number 1:</p></td>
                         <td><input type="text" class="flow-control" id="num1"></td>
@@ -39,7 +40,7 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td><Button onclick="dividenumber()" class="btn btn-success">Divide</Button></td>
+                        <td><Button onclick="multiplynumber()" class="btn btn-success">Multiply</Button></td>
                     </tr>
 
                     <tr>
@@ -52,11 +53,11 @@
         
     </div>
     <script>
-        function dividenumber()
+        function multiplynumber()
         {
             var num1 =parseInt(document.getElementById("num1").value)
             var num2 =parseInt(document.getElementById("num2").value)
-            var result =num1/num2
+            var result =num1*num2
             
             document.getElementById("res").innerHTML=result
             console.log(result)
